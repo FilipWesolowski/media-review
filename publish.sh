@@ -6,7 +6,7 @@ cd "$(dirname "$0")"
 SRC=/Users/filip/Auroria/auroria_v3/apps/offer_api/docs/brainstorm/2026-11-03-v2-media-set/review.html
 cp "$SRC" review.html
 STATICRYPT_PASSWORD="$(cat .password)" npx --yes staticrypt@3.5.4 review.html -d encrypted \
-  --remember 30 --template-title "v2 Media Review" --template-instructions "Auroria — v2 to v3 image migration review" \
+  --remember 30 --short --template-title "v2 Media Review" --template-instructions "Auroria — v2 to v3 image migration review" \
   --template-color-primary "#3f4a5a" --template-color-secondary "#e9ebef"
 mv encrypted/review.html index.html
 rm -rf encrypted review.html

@@ -1,0 +1,5 @@
+# plaintext page and password never leave this machine; only the encrypted index.html is published
+review.html
+.password
+node_modules/
+encrypted/
